@@ -1,0 +1,15 @@
+/* Стили для списка дел */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Сообщение о пустом списке */
+.empty-message {
+  text-align: center;
+  color: #727272;
+  padding: 20px;
+  font-size: 18px;
+}
+

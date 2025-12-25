@@ -1,23 +1,20 @@
 import { useState } from 'react'
 import './TodoForm.css'
 
-// Компонент для формы добавления нового дела
 function TodoForm({ onAddTodo }) {
   const [inputValue, setInputValue] = useState('')
+  //  через setInputValue меняем значение
 
-  // Обработчик отправки формы
+  // обработчик отправки формы
   const handleSubmit = (e) => {
     e.preventDefault()
     
-    // Проверяем, что поле не пустое
     if (inputValue.trim() === '') {
       return
     }
 
-    // Вызываем функцию добавления дела из родительского компонента
     onAddTodo(inputValue)
-    
-    // Очищаем поле ввода
+
     setInputValue('')
   }
 

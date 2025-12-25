@@ -1,6 +1,5 @@
 import './TodoItem.css'
 
-// Компонент для отображения одного дела
 function TodoItem({ todo, onDelete }) {
   return (
     <li className="todo-item">
